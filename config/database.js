@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = ({env}) => ({
   connection: {
-    client: "postgress",
+    client: "postgres",
     connection: {
       host: env("DATABASE_HOST", "aws-0-sa-east-1.pooler.supabase.com"),
       port: env('DATABASE_NAME', 5432),
